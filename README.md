@@ -31,10 +31,27 @@ def two_n_demo(n):
 
 Another example...
 
+
 ```
+0(logn)
+
 divide_n_demo(n):
   print(n)
   if n <= 1
     return
+  divide_n_demo(n/2)
+```
+
+Another example...
+
+
+```
+0(2^logn)
+
+divide_n_demo(n):
+  print(n)
+  if n <= 1
+    return
+  divide_n_demo(n/2)
   divide_n_demo(n/2)
 ```
